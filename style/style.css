@@ -1,0 +1,393 @@
+html{height: 100%;}
+
+body
+{ font-family: "Linux Libertine O", Linux Libertine O, sans-serif;
+  padding: 0px;
+  margin: 0px;
+  font-size: .78em;
+  background-color: rgb(0, 0, 0);
+  color: #5D5D5D;}
+
+/* p
+{ margin: 0px;
+  padding: 0px 0px 16px 0px;
+  line-height: 1.7em;} */
+
+h1, h2, h3, h4, h5, h6
+{ font: normal 179% 'century gothic', Linux Libertine O, sans-serif;
+  color: rgb(10, 20, 106);
+  margin: 0 0 15px 0;
+  padding: 15px 0 5px 0;}
+
+h2
+{ font: normal 200% 'century gothic', Linux Libertine O, sans-serif;
+  color: rgb(10, 20, 106);}
+
+h3
+{ font: normal 125% 'century gothic', Linux Libertine O, sans-serif;}
+
+h4, h5, h6
+{ margin: 0;
+  padding: 0 0 5px 0;
+  font: normal 120% Linux Libertine O, sans-serif;
+  color: #0AB6F6;}
+
+h5, h6
+{ font: italic 95% Linux Libertine O, sans-serif;
+  color: #888;}
+
+h6
+{ color: #362C20;}
+
+a, a:hover
+{
+  color: rgb(142, 3, 56);
+  text-decoration: none;
+  outline:none !important;}
+
+a:hover
+{
+  color: rgb(244, 0, 124);
+  outline:none !important;}
+
+a
+{ outline:none !important;}
+
+
+.left
+{ float: left;
+  margin-right: 10px;}
+
+.right
+{ float: right;
+  margin-left: 10px;}
+
+.center
+{ display: block;
+  text-align: center;
+  margin: 0 auto;}
+
+
+ul
+{ margin: 2px 0px 18px 16px;
+  padding: 0px;}
+
+ul li
+{ list-style-type: square;
+  margin: 0px 0px 6px 0px;
+  padding: 60px;}
+
+ol
+{ margin: 8px 0px 0px 24px;
+  padding: 0px;}
+
+ol li
+{ margin: 0px 0px 11px 0px;
+  padding: 0px;}
+
+#main, #logo, #menubar, #site_content
+{ margin-left: auto;
+  margin-right: auto;}
+
+#main
+{ padding-bottom: 40px;}
+
+#header
+{ background-color: rgb(0, 0, 0)}
+
+#profilePic
+{ width:  190px;
+  position: relative;
+  height: 280px;
+  background: transparent url(EQ2T0976.jpg) no-repeat;}
+
+#logo
+{ width: 860px;
+  position: relative;
+  height: 100px;
+  }
+
+#logo #logo_text
+{ position: absolute;
+  top: 47px;
+  left: 0;}
+
+#logo h1, #logo h2
+{ font: normal 300% 'century gothic', Linux Libertine O, sans-serif;
+  border-bottom: 0;
+  text-transform: none;
+  margin: 0;}
+
+#logo_text h1, #logo_text h1 a, #logo_text h1 a:hover
+{ padding: 22px 0 0 0;
+  color: #FFF;
+  text-decoration: none;
+  border: 0;}
+
+
+#menubar
+  { width: 898px;
+    height: 52px;
+    padding: 0;
+    background: rgb(0, 0, 0);
+    outline:none !important;
+    text-decoration: none;}
+
+  ul#menu, ul#menu li
+  {
+    height: 52px;
+    float: right;
+    margin: 0;
+    padding: 0;
+    outline:none !important;
+    text-decoration: none;
+  }
+
+  ul#menu li
+  { list-style: none;
+    outline:none !important;
+    text-decoration: none;
+  }
+
+  ul#menu li a
+  {
+    display: block;
+    float: left;
+    height: 30px;
+    margin: 10px 0 0 10px;
+    padding: 9px 16px 6px 16px;
+    text-align: center;
+    color: #FFF;
+    font-variant: small-caps;
+    font-size: 120%;
+    text-decoration: none;
+    background: transparent;
+    outline:none !important;
+  }
+
+
+  ul#menu li a:hover, ul#menu li.selected a, ul#menu li.selected a:hover
+  {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    outline:none !important;
+    text-decoration: none;}
+
+#site_content
+{ width: 858px;
+  overflow: hidden;
+  margin: 0 auto 0 auto;
+  padding: 10px 20px 20px 20px;
+  background-color:	rgb(255,250,240);
+  border: 15px solid #FFF;}
+
+
+
+#site_content_wide
+  { width: 888px;
+    max-height: 2000px;
+    overflow: hidden;
+    margin: 0 auto 0 auto;
+    padding: 10px 20px 20px 20px;
+    background-color:	rgb(255,250,240);
+  }
+
+
+.sidebar
+{ float: left;
+  width: 190px;
+  padding: 10px 10px 20px 2px;}
+
+.sidebar ul
+{ width: 178px;
+  padding: 4px 0 0 0;
+  margin: 4px 0 0px 0;
+}
+
+.sidebar li
+{ list-style: none;
+  padding: 0 0 7px 0; }
+
+.sidebar li a, .sidebar li a:hover
+{ padding: 0 0 0 15px;
+  display: block;
+  color:  rgb(0, 0, 0);
+  /* background: transparent url(link.png) no-repeat left center; */
+  border: 0;
+  font-size: 150%;
+}
+
+.sidebar li a.selected
+{ color: #444;}
+
+
+
+
+
+
+
+#content
+{ text-align: left;
+  float: right;
+  width: 630px;
+  padding: 0;
+  color:rgb(9, 9, 43);
+  font-size:10pt}
+
+#content ul
+{ margin: 2px 0 22px 0px;}
+
+#content ul li
+{ list-style-type: none;
+  background: url(bullet.png) no-repeat;
+  margin: 0 0 0 0;
+  padding: 0 0 4px 25px;
+  line-height: 1.5em;}
+
+
+#year
+{ float: left;
+  width: 5%;
+  padding: 10px 0px 0px 2px;
+  vertical-align: middle;
+}
+
+#yearItem{
+    text-align: center;
+    color:rgb(4, 39, 111);
+    font-variant: small-caps;
+    text-decoration: none;
+    font-size: 100%;
+    vertical-align: middle;
+    }
+
+#publisher
+  { float: left;
+    width: 5%;
+    padding: 10px 0px 0px 2px;
+
+ }
+#publisherItem{
+    text-align: center;
+    color:rgb(4, 39, 111);
+    text-decoration: none;
+    font-size: 100%
+    }
+
+#paperTitle{
+   float: left;
+   width: 35%;
+   padding: 10px 10px 20px 2px;
+}
+
+#paperTitleItem{
+  height: 50px;
+  text-align: left;
+  color:rgb(4, 39, 111);
+  text-decoration: none;
+  font-size: 90%;
+  text-align: justify;
+}
+
+
+#abstract{ float: left;
+           width: 40%;
+           padding: 10px 10px 20px 2px;
+           color:rgb(4, 39, 111);
+           font-size: 100%;
+        }
+
+
+
+p{
+  margin: 0;
+  text-align: justify;
+  text-indent: 25px;
+  line-height: 1.25;
+}
+
+
+#relatedLinks{
+  float: left;
+  width: 10%;
+  padding: 10px 10px 20px 2px;
+  color:rgb(4, 39, 111);
+  text-decoration: none;
+  font-size: 50%;
+  margin: 0;
+    outline:none !important;
+}
+
+
+#activeLink{
+  color:rgb(4, 39, 111);
+  font-size:22px;
+    outline:none !important;
+}
+
+
+
+#inactiveLink{
+  color:rgb(192, 195, 200);
+  font-size:22px;
+  outline:none !important;
+}
+
+
+
+
+
+
+
+.excerpt-hidden {
+  height: 3.5rem;
+  overflow: hidden;
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 64px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 1) 100% );
+  }
+}
+
+.excerpt-visible {
+  height: auto;
+  overflow: auto;
+}
+
+
+
+#conf
+{ float: left;
+  width: 10%;
+  padding: 10px 0px 0px 2px;
+  vertical-align: middle;
+}
+
+#confItem{
+    text-align: left;
+    color:rgb(4, 39, 111);
+    font-variant: small-caps;
+    text-decoration: none;
+    font-size: 100%;
+    vertical-align: middle;
+    }
+#confTitle{
+       float: left;
+       width: 35%;
+       padding: 10px 10px 20px 2px;
+    }
+
+#confTitleItem{
+      height: 50px;
+      text-align: left;
+      color:rgb(4, 39, 111);
+      text-decoration: none;
+      font-size: 90%;
+      text-align: justify;
+    }
