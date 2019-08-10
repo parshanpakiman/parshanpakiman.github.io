@@ -96,10 +96,10 @@ ol li
 { background-color: rgb(0, 0, 0)}
 
 #profilePic
-{ width:  190px;
+{ width:  214px;
   position: relative;
-  height: 280px;
-  background: transparent url(me2.jpeg) no-repeat;}
+  height: 209px;
+  background: transparent url(IMG_0077.jpg) no-repeat;}
 
 #logo
 { width: 860px;
@@ -177,7 +177,7 @@ ol li
 { width: 858px;
   overflow: hidden;
   margin: 0 auto 0 auto;
-  padding: 10px 20px 20px 20px;
+  padding: 10px 20px 00px 20px;
   background-color:	rgb(255,250,240);
   border: 15px solid #FFF;}
 
@@ -229,7 +229,7 @@ ol li
 #content
 { text-align: left;
   float: right;
-  width: 630px;
+  width: 620px;
   padding: 0;
   color:rgb(9, 9, 43);
   font-size:10pt}
