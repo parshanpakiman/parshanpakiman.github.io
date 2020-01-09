@@ -40,18 +40,84 @@
     <h2 style="padding:0;margin: 0;font-variant: small-caps;">Research Papers</h2>
 
 
+    <!--
+            Item
+    -->
+    <div class="container">
+          <div id="year">
+            <div id="yearItem"> January 2020 </div>
+          </div>
+          <div id="publisher">
+            <div id="publisherItem">   </div>
+          </div>
+          <div id="paperTitle">
+            <div id="paperTitleItem">
+              Self-guided Approximate Linear Programs. Joint work with
+                <i>
+                  Selvaprabu Nadarajah, Negar Soheili, and Qihang Lin.
+                </i>
+                <b>
+                    (Submitted to Management Science).
+                </b>
+            </div>
+          </div>
+
+          <div id="relatedLinks">
+                  <!--link-->
+                  <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3512665" target="_blank">
+                    <i id=activeLink  class="fa">&#xf0c1;</i>
+                  </a>
+                  <!--U TUBE-->
+                    <i id='inactiveLink' class="fa">&#xf167;</i>
+                  <span style="display:inline-block; width: 2px;"></span>
+                  <!--CODE-->
+                  <a href="https://github.com/Self-guided-Approximate-Linear-Programs" target="_blank">
+                    <i id=activeLink class="fa">&#xf1c9;</i>
+                  </a>
+
+          </div>
+
+          <div id="abstract">
+              <div class="content">
+                <p class="js-excerpt excerpt-hidden" style="line-height: 1.2em;text-indent: 0px;">
+                <b> Abstract: </b>
+                	Approximate linear programs (ALPs) are well-known models based
+                  on value function approximations (VFAs) to obtain heuristic policies
+                  and lower bounds on the optimal policy cost of Markov decision processes
+                  (MDPs). The ALP VFA is a linear combination of predefined basis
+                  functions that are chosen using domain knowledge and updated heuristically
+                  if the ALP optimality gap is large. We side-step the need for such basis
+                  function engineering in ALP - an implementation bottleneck - by proposing
+                  a sequence of ALPs that embed increasing numbers of random basis functions
+                  obtained via inexpensive sampling. We provide a sampling guarantee and
+                  show that the VFAs from this sequence of models converge to the exact
+                  value function. Nevertheless, the performance of the ALP policy can
+                  fluctuate significantly as more basis functions are sampled.
+                  To mitigate these fluctuations, we "self-guide" our convergent
+                  sequence of ALPs using past VFA information such that a worst-case
+                  measure of policy performance is improved. We perform numerical
+                  experiments on perishable inventory control and generalized joint
+                  replenishment applications, which, respectively, give rise to
+                  challenging discounted-cost MDPs and average-cost semi-MDPs. We find that self-guided ALPs (i) significantly reduce policy cost fluctuations and improve the optimality gaps from an ALP approach that employs basis functions tailored to the former application, and (ii) deliver optimality gaps that are comparable to a known adaptive basis function generation approach targeting the latter application. More broadly, our methodology provides application-agnostic policies and lower bounds to benchmark approaches that exploit application structure.
+              </p>
+            </div>
+            <a role="button" href="#" class="js-show-more">Show more</a>
+            </div>
+
+
+        </div>
 
 
 
       <!--
-              Item 1
+              Item
       -->
       <div class="container">
             <div id="year">
-              <div id="yearItem"> Summer 2019 </div>
+              <div id="yearItem"> August 2019 </div>
             </div>
             <div id="publisher">
-              <div id="publisherItem"> KDD  </div>
+              <div id="publisherItem">  </div>
             </div>
             <div id="paperTitle">
               <div id="paperTitleItem">
@@ -75,7 +141,7 @@
                     </a>
                     <span style="display:inline-block; width: 2px;"></span>
                     <!--U TUBE-->
-                      <a href="https://www.youtube.com/watch?v=CB0HEhlXgrQ" target="_blank">
+                      <a href="https://www.youtube.com/playlist?list=PL0RicIgDjGEyYSJfxuPNXoWxzDU0PlPzr" target="_blank">
                         <i id='activeLink' class="fa">&#xf167;</i>
                       </a>
                     <span style="display:inline-block; width: 2px;"></span>
@@ -122,51 +188,6 @@
 
           </div>
 
-          <!--
-                  Item 2
-          -->
-          <div class="container">
-                <div id="year">
-                  <div id="yearItem"> Present </div>
-                </div>
-                <div id="publisher">
-                  <div id="publisherItem">   </div>
-                </div>
-                <div id="paperTitle">
-                  <div id="paperTitleItem">
-                    Self-guided Approximate Linear Programs. Joint work with
-                      <i>
-                        Selvaprabu Nadarajah, Negar Soheili, and Qihang Lin.
-                      </i>
-                      <b>
-                          (Draft available upon request).
-                      </b>
-                  </div>
-                </div>
-
-                <div id="relatedLinks">
-                        <!--link-->
-                          <i id=inactiveLink  class="fa">&#xf0c1;</i>
-                          <span style="display:inline-block; width: 2px;"></span>
-                        <!--U TUBE-->
-                          <i id='inactiveLink' class="fa">&#xf167;</i>
-                        <span style="display:inline-block; width: 2px;"></span>
-                        <!--CODE-->
-                          <i id=inactiveLink class="fa">&#xf1c9;</i>
-
-                </div>
-
-                <div id="abstract">
-                    <div class="content">
-                        <p class="js-excerpt excerpt-hidden">
-
-                      </p>
-                    </div>
-                    <!-- <a role="button" href="#" class="js-show-more">Show more</a> -->
-                  </div>
-
-
-              </div>
 
               <!--
                       Item 3
@@ -259,16 +280,12 @@
           <div id="abstract">
               <div class="content">
                   <p class="js-excerpt excerpt-hidden" style="line-height: 1.2em;text-indent: 0px;">
-                    <b>Abstract: </b> Approximate linear programs (ALPs) provide policies
-                    and bounds for Markov decision processes (MDPs) arising
-                    in challenging operations management applications.
-                    Using ALP entails designing parametric MDP value
-                    function approximations, which poses a significant implementation hurdle.
-                    We develop an ALP scheme that side-steps this issue by leveraging sampling
-                    techniques from machine learning.
+                    <b>Abstract: </b> Same as above.
                 </p>
               </div>
-              <a role="button" href="#" class="js-show-more">Show more</a>
+              <!--
+                <a role="button" href="#" class="js-show-more">Show more</a>
+              -->
           </div>
 
       </div>
