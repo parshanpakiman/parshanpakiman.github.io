@@ -225,7 +225,7 @@ ol li
 #content_event
 { text-align: left;
   float: right;
-  width: 590px;
+  width: 585px;
   padding: 10px 20px 10px 10px;
   color:rgb(9, 9, 43);
   font-size:10pt;
@@ -238,9 +238,10 @@ ol li
 { text-align: left;
   float: right;
   width: 620px;
-  padding: 0;
+  padding: 10px 0px 4px 25px;
   color:rgb(9, 9, 43);
-  font-size:10pt}
+  font-size:11pt;
+line-height: 1.5;}
 
 #content ul
 { margin: 2px 0 22px 0px;}
