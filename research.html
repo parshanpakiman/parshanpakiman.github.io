@@ -30,6 +30,7 @@
         <ul id="menu">
           <li>                  <a href="vita.html">      Vita       </a></li>
           <!-- <li>                  <a href="email.html">     Email      </a></li> -->
+          <li>                  <a href="talks.html">  Talks     </a></li>
           <li class="selected"> <a href="research.html">  Research   </a></li>
           <li>                  <a href="index.html">     Home       </a></li>
         </ul>
@@ -191,6 +192,81 @@
 
           </div>
             <h3 style="padding:0;margin: 0; font-weight: bold;"> Working Papers </h2>
+
+
+
+          <!--
+                      Item
+          -->
+          <div class="container">
+                <div id="year">
+                  <div id="yearItem"> Present </div>
+                </div>
+                <div id="publisher">
+                  <div id="publisherItem">   </div>
+                </div>
+                <div id="paperTitle">
+                  <div id="paperTitleItem">
+                      Self-adapting Robustness in Demand Learning, with
+                      <i>
+                        Boxiao (Beryl) Chen, Selvaprabu Nadarajah and Stefanus Jasin.
+                      </i>
+                      <b>
+                          (Draft is available upon request).
+                      </b>
+                  </div>
+                </div>
+
+                <div id="relatedLinks">
+                        <!--link-->
+                          <i id=inactiveLink  class="fa">&#xf0c1;</i>
+                          <span style="display:inline-block; width: 2px;"></span>
+                        <!--U TUBE-->
+                        <a href="https://youtu.be/DrioI3lLiUc" target="_blank">
+                          <i id='activeLink' class="fa">&#xf167;</i>
+                        </a>
+                        <span style="display:inline-block; width: 2px;"></span>
+                        <!--CODE-->
+                          <i id=inactiveLink class="fa">&#xf1c9;</i>
+
+                </div>
+
+                  <div id="abstract">
+                      <div class="content">
+                          <p class="js-excerpt excerpt-hidden" style="line-height: 1.2em;text-indent: 0px;">
+                          <b> Abstract: </b>
+                          We study dynamic pricing over a finite number of periods
+                          in the presence of demand-model ambiguity. Departing from the
+                          typical no-regret learning environment, where price changes are
+                          intervals and each price can apply to a large number of arrivals.
+                          In this environment, which arises in retailing, a pricing decision
+                          based on an incorrect demand-model can significantly impact
+                          cumulative revenue. We develop an adaptively-robust-learning (ARL)
+                          pricing policy that learns the true model parameters from data while
+                          actively managing demand-model ambiguity. It optimizes an objective
+                          that is robust with respect to a self-adapting set of demand models,
+                          where a given model is included in this set if the sales data revealed
+                          from prior pricing decisions makes it ``plausible''. As a result, it
+                          gracefully transitions from being robust when demand-model ambiguity is
+                          high to minimizing regret when this ambiguity diminishes upon receiving
+                          more data. We characterize the stochastic behavior of ARL's self-adapting
+                          ambiguity sets and derive a regret bound that highlights the link between
+                          the scale of revenue loss and the customer arrival pattern. We also show that ARL,
+                          by being conscious of both model risk and revenue,
+                          bridges the gap between a distributionally robust policy and a follow-the-leader
+                          policy, which focus on model risk and revenue, respectively. We numerically find
+                          that the ARL policy exhibits superior performance compared to distributionally
+                          robust, follow-the-leader, and upper-confidence-bound policies,
+                          as well as an extension, in terms of expected profit and/or value at risk.
+                        </p>
+                      </div>
+                      <a role="button" href="#" class="js-show-more">Show more</a>
+                    </div>
+
+
+                </div>
+
+
             <!--
                         Item
             -->
@@ -241,53 +317,7 @@
                   </div>
 
 
-            <!--
-                        Item
-            -->
-            <div class="container">
-                  <div id="year">
-                    <div id="yearItem"> Present </div>
-                  </div>
-                  <div id="publisher">
-                    <div id="publisherItem">   </div>
-                  </div>
-                  <div id="paperTitle">
-                    <div id="paperTitleItem">
-                        Adaptively robust demand learning for dynamic pricing, with
-                        <i>
-                          Boxiao (Beryl) Chen, Selvaprabu Nadarajah and Stefanus Jasin.
-                        </i>
-                        <b>
-                            (Draft is available upon request).
-                        </b>
-                    </div>
-                  </div>
 
-                  <div id="relatedLinks">
-                          <!--link-->
-                            <i id=inactiveLink  class="fa">&#xf0c1;</i>
-                            <span style="display:inline-block; width: 2px;"></span>
-                          <!--U TUBE-->
-                            <i id='inactiveLink' class="fa">&#xf167;</i>
-                            </a>
-                          <span style="display:inline-block; width: 2px;"></span>
-                          <!--CODE-->
-                            <i id=inactiveLink class="fa">&#xf1c9;</i>
-
-                  </div>
-
-                    <div id="abstract">
-                        <div class="content">
-                            <p class="js-excerpt excerpt-hidden" style="line-height: 1.2em;text-indent: 0px;">
-                            <b> Abstract: </b>
-                            We consider a retailer setting prices of a product at prespecified times over a finite selling season. Past sales and price data are used to learn demand curves and set future prices to maximize expected profit. No-regret learning methods, such as follow-the-leader (FTL), work well when the volume of customer arrivals is small before learning the true demand model. Otherwise, FTL will have high demand-model risk since it may use a wrong demand model for many customers. Robust optimization (RO) methods are suitable to address such a risk, albeit being conservative. We propose an adaptively robust learning (ARL) framework that lies in a spectrum between FTL and RO based on the data arrival pattern and reduces to these methods in the extremes of data availability. Consistent with our theory, we numerically show that ARL improves on FTL, RO, and simpler robust-learning benchmarks.
-                          </p>
-                        </div>
-                        <a role="button" href="#" class="js-show-more">Show more</a>
-                      </div>
-
-
-                  </div>
 
 
               <!--
@@ -339,104 +369,6 @@
 
 
 
-
-
-
-
-
-
-
-
-<!--
-
-
-              TALKS
-
-
--->
-
-  <h3 style="padding:0;margin: 0;font-weight: bold;">Invited Talks</h2>
-
-
-
-    <!--
-            TALK 1
-    -->
-    <div class="container">
-          <div id="conf">
-            <div id="confItem">
-              POMS 2019          <br/>
-              INFORMS 2018       <br/>
-              POMS 2018
-             </div>
-
-          </div>
-
-
-          <div id="confTitle">
-            <div id="confTitleItem">
-                Self-guided Approximate Linear Programs
-            </div>
-          </div>
-
-          <div id="relatedLinks">
-
-          <a href="https://pomsmeetings.org/conf-2019/" target="_blank">
-                <i id=activeLink  class="fa">&#xf0c1;</i>
-          </a>
-          </div>
-
-
-          <div id="abstract">
-              <div class="content">
-                  <p class="js-excerpt excerpt-hidden" style="line-height: 1.2em;text-indent: 0px;">
-                    <b>Abstract: </b> Same as the above.
-                </p>
-              </div>
-              <!--
-                <a role="button" href="#" class="js-show-more">Show more</a>
-              -->
-          </div>
-
-      </div>
-
-
-      <!--
-            Talk 2
-      -->
-
-      <div class="container">
-          <div id="conf">
-            <div id="confItem">
-              KDD 2019
-             </div>
-
-          </div>
-            <div id="confTitle">
-              <div id="confTitleItem">
-                  SMOILE: A Shopper Marketing Optimization and Inverse Learning Engine.
-              </div>
-            </div>
-
-            <div id="relatedLinks">
-
-            <a href="https://www.kdd.org/kdd2019/" target="_blank">
-                  <i id=activeLink  class="fa">&#xf0c1;</i>
-            </a>
-            </div>
-
-            <div id="abstract">
-                <div class="content">
-                    <p class="js-excerpt excerpt-hidden" style="line-height: 1.2em;text-indent: 0px;">
-                    <b> Abstract: </b>
-                    Same as the above.
-                  </p>
-                </div>
-                <!-- <a role="button" href="#" class="js-show-more">Show more</a> -->
-              </div>
-
-
-          </div>
 
 
 
