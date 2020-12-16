@@ -403,8 +403,26 @@ p{
 
 .scrollable {
   overflow-y: scroll;
-  height:200px;"
+  height:200px;
     }
+
+.scrollable_video {
+      overflow-y: scroll;
+      height:300px;
+      width:800px;
+      overflow-y:scroll;
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background-color: rgba(0, 0, 0, .5);
+  -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+}
+
 
 .icon{
   color: black
