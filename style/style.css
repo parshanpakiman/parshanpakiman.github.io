@@ -335,6 +335,12 @@ p{
     outline:none !important;
 }
 
+#activeLink:hover{
+  color:rgb(142, 3, 56);
+  font-size:22px;
+    outline:none !important;
+}
+
 
 
 #inactiveLink{
