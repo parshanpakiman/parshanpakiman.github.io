@@ -113,7 +113,7 @@ ol li
   left: 0;}
 
 #logo h1, #logo h2
-{ font: normal 340% fantasy;
+{ font: normal 340% 'Brush Script MT', cursive;
   border-bottom: 0;
   text-transform: none;
   margin: 0;}
@@ -256,7 +256,7 @@ line-height: 1.5;}
 
 #year
 { float: left;
-  width: 5%;
+  width: 1%;
   padding: 10px 0px 0px 2px;
   vertical-align: middle;
 }
@@ -285,7 +285,7 @@ line-height: 1.5;}
 
 #paperTitle{
    float: left;
-   width: 35%;
+   width: 39%;
    padding: 10px 10px 20px 2px;
 }
 
