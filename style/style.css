@@ -1,3 +1,8 @@
+:root {
+  --bg_color:#212124
+}
+
+
 html{height: 100%;}
 
 body
@@ -5,7 +10,7 @@ body
   padding: 0px;
   margin: 0px;
   font-size: .78em;
-  background-color: rgb(0, 0, 0);
+  background-color: var(--bg_color);
   color: #5D5D5D;}
 
 /* p
@@ -93,7 +98,7 @@ ol li
 { padding-bottom: 40px;}
 
 #header
-{ background-color: rgb(0, 0, 0)}
+{ background-color: var(--bg_color)}
 
 #profilePic
 { width:  214px;
@@ -101,10 +106,20 @@ ol li
   height: 209px;
   background: transparent url('../Files/Headshot/headshot.jpg') no-repeat;}
 
+
+#firstLastName
+{
+    position: relative;
+    height: 60px;
+    width: auto;
+    padding: 5px 5px 5px 5px;
+    background: transparent url('../Files/Misc/firstLastName.jpg') no-repeat;
+}
+
 #logo
-{ width: 860px;
+{ width: 950px;
   position: relative;
-  height: 100px;
+  height: 90px;
   }
 
 #logo #logo_text
@@ -130,7 +145,7 @@ ol li
   { width: 898px;
     height: 52px;
     padding: 0;
-    background: rgb(0, 0, 0);
+    background: var(--bg_color);
     outline:none !important;
     text-decoration: none;}
 
@@ -221,6 +236,17 @@ ol li
 { color: #444;}
 
 
+#customized_title
+{
+    text-align: left;
+    float: left;
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+    color:rgb(9, 9, 43);
+    font-size:14pt;
+    border-style: outset;
+}
+
 
 
 #content_event
@@ -267,7 +293,7 @@ line-height: 1.5;}
     color:rgb(4, 39, 111);
     font-weight: bold;
     text-decoration: none;
-    font-size: 100%;
+    font-size: 150%;
     vertical-align: middle;
     }
 
@@ -426,7 +452,7 @@ p{
 }
 ::-webkit-scrollbar-thumb {
   border-radius: 6px;
-  background-color: rgba(0, 0, 0, .5);
+  background-color: var(--bg_color);
   -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5);
 }
 
