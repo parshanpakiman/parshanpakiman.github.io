@@ -40,3 +40,14 @@ const ExcerptWidget = {
 };
 
 ExcerptWidget.showMore('.js-show-more', '.js-excerpt');
+
+
+
+function loadText(fileName, paragraphId) {
+    fetch(fileName)
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById(paragraphId).innerText = data;
+        })
+        .catch(error => console.error('Error loading text:', error));
+}

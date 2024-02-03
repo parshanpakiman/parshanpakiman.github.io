@@ -42,365 +42,248 @@
     </div>
 
 
+    <div id="site_content">
+
+      <div class="container">
+        <div id="customized_title">     Accepted Journal Paper <hr> </div>
+      </div>
 
 
-
-    <div id="site_content_wide">
-
-
-    <!--  ================================
-              Journal Papers
-          ================================      -->
-
-          <!-- <div class="container">
-            <div id="customized_title">
-                Journal Paper
+      <div class="container">
+        <div id="paperInfo">
+            <div id="number"> <div class="container"> 1.  </div></div>
+            <div id="paperTitle">
+                <span class="title-paper-text-format">
+                    Self-Guided Approximate Linear Programs: Randomized Multi-Shot
+                    Approximation of Discounted Cost Markov Decision Processes.
+                </span>
+                <span class="author-text-format">
+                P. Pakiman, S. Nadarajah, N. Soheili, Q. Lin.
+                </span>
+                Accepted for publication in
+                <span class="journal-text-format">
+                    Management Science.
+                </span>
+                <br></br>
             </div>
-          </div>
-          <hr> -->
-
-    <br></br><hr>
-    <!--  ================================
-                    Paper 1
-          ================================      -->
-
-          <div class="container">
-
-            <div id="paperInfo">
-                <div id="number"> <div class="container"> 1.  </div></div>
-                <div id="paperTitle">       Self-guided Approximate Linear Programs.          </div>
-                <div class="relatedLinks">
-                <div id="links">
-                    <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3512665"
-                          target="_blank"> <i id=activeLink  class="fa">&#xf0c1;</i> </a>
-                    <a href="https://github.com/Self-guided-Approximate-Linear-Programs/Self-guided-ALPs-and-Related-Benchmarks"
-                          target="_blank"> <i id=activeLink class="fa">&#xf1c9;</i> </a>
-                </div>
-                </div>
-                <div id="paperAuthors">     P. Pakiman, S. Nadarajah, N. Soheili, Q. Lin.     </div>
-                <div id="publisher">        Under third round review in the Optimization area at <strong>Management Science.</strong>   </div>
-              </div>
-
-
-            <div id="abstract">
-                <div class="content">
-                  <p class="js-excerpt excerpt-hidden" style="line-height: 1.2em;text-indent: 0px; width:85%;">
-                  <b> Abstract. </b>
-                  	Approximate linear programs (ALPs) are well-known models based on value function
-                    approximations (VFAs) to obtain policies and lower bounds on the optimal policy cost
-                    of discounted-cost Markov decision processes (MDPs). Formulating an ALP requires
-                    (i) basis functions, the linear combination of which defines the VFA, and
-                    (ii) a state-relevance distribution, which determines the relative importance of different states
-                    in the ALP objective for the purpose of minimizing VFA error.
-                    Both these choices are typically heuristic: basis function selection relies on domain knowledge
-                    while the state-relevance distribution is specified using the frequency of states visited by a
-                    heuristic policy. We propose a self-guided sequence of ALPs that embeds random basis functions
-                    obtained via inexpensive sampling and uses the known VFA from the previous iteration to guide VFA
-                    computation in the current iteration. Self-guided ALPs mitigate the need for domain knowledge
-                    during basis function selection as well as the impact of the initial choice of the state-relevance
-                    distribution, thus significantly reducing the ALP implementation burden. We establish high
-                    probability error bounds on the VFAs from this sequence and show that a worst-case measure
-                    of policy performance is improved. We find that these favorable implementation and
-                    theoretical properties translate to encouraging numerical results on perishable inventory
-                    control and options pricing applications, where self-guided ALP policies improve upon
-                    policies from problem-specific methods. More broadly, our research takes a meaningful
-                    step toward application-agnostic policies and bounds for MDPs.
-                </p>
-              </div> <a role="button" href="#" class="js-show-more" >Show more</a>
-              </div>
-          </div>
-
-          <br></br><hr>
-
-
-
-      <!--  ================================
-                      Paper 2
-            ================================      -->
-            <div class="container">
-
-              <div id="paperInfo">
-                  <div id="number"> <div class="container"> 2.  </div></div>
-                  <div id="paperTitle">       Self-adapting Robustness in Demand Learning.          </div>
-                  <div class="relatedLinks">
-                  <div id="links">
-                      <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3734591"
-                            target="_blank"> <i id=activeLink  class="fa">&#xf0c1;</i> </a>
-                      <a href="https://youtu.be/DrioI3lLiUc"
-                            target="_blank"> <i id=activeLink class="fa">&#xf167;</i> </a>
-                  </div>
-                  </div>
-                  <div id="paperAuthors">     B. Chen, S. Nadarajah, P. Pakiman, S. Jasin.     </div>
-                  <div id="publisher">        Under revision for resubmission to <strong>Operations Research.</strong>   </div>
-                </div>
-
-
-              <div id="abstract">
-                  <div class="content">
-                    <p class="js-excerpt excerpt-hidden" style="line-height: 1.2em;text-indent: 0px; width:85%;">
-                    <b> Abstract. </b>
-                    We study dynamic pricing over a finite number of periods in the presence of demand
-                        model ambiguity. Departing from the typical no-regret learning environment, where price
-                        changes are allowed at any time, pricing decisions are made at pre-specified points in
-                         time and each price can be applied to a large number of arrivals. In this environment,
-                        which arises in retailing, a pricing decision based on an incorrect demand model can
-                        significantly impact cumulative revenue. We develop an adaptively-robust-learning (ARL)
-                        pricing policy that learns the true model parameters from the data while actively managing
-                        demand model ambiguity. It optimizes an objective that is robust with respect to a self-adapting
-                        set of demand models, where a given model is included in this set only if the sales data
-                        revealed from prior pricing decisions makes it “probable”. As a result, it gracefully
-                        transitions from being robust when demand model ambiguity is high to minimizing regret when
-                        this ambiguity diminishes upon receiving more data. We characterize the stochastic behavior of
-                        ARL’s self-adapting ambiguity sets and derive a regret bound that highlights the link between
-                        the scale of revenue loss and the customer arrival pattern. We also show that ARL, by being
-                        conscious of both model ambiguity and revenue, bridges the gap between a distributionally
-                        robust policy and a follow-the-leader policy, which focus on model ambiguity and revenue,
-                        respectively. We numerically find that the ARL policy, or its extension thereof, exhibits
-                        superior performance compared to distributionally robust, follow-the-leader, and
-                        upper-confidence-bound policies in terms of expected revenue and/or value at risk.
-                  </p>
-                </div> <a role="button" href="#" class="js-show-more" >Show more</a>
-                </div>
+            <div class="relatedLinks">
+            <div id="links">
+                <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3512665"
+                      target="_blank"> <i id=activeLink  class="fa">&#xf0c1;</i> </a>
+                <a href="https://github.com/Self-guided-Approximate-Linear-Programs/Self-guided-ALPs-and-Related-Benchmarks"
+                      target="_blank"> <i id=activeLink class="fa">&#xf1c9;</i> </a>
             </div>
-
-            <br></br><hr>
-
-
-
-        <!--  ================================
-                  Conference Papers
-              ================================      -->
-<!--
-              <div class="container">
-                <div id="customized_title">
-                    Conference Paper
-                </div><br></br>
-              </div>
-              <hr> -->
-
-      <!--  ================================
-                      Paper 3
-            ================================      -->
-
-            <div class="container">
-
-              <div id="paperInfo">
-                  <div id="number"> <div class="container"> 3.  </div></div>
-                  <div id="paperTitle">     SMOILE: A Shopper Marketing Optimization and Inverse Learning Engine.           </div>
-                  <div class="relatedLinks">
-                  <div id="links">
-                      <a href="https://doi.org/10.1145/3292500.3330788"
-                            target="_blank"> <i id=activeLink  class="fa">&#xf0c1;</i> </a>
-                      <a href="https://www.youtube.com/playlist?list=PL0RicIgDjGEyYSJfxuPNXoWxzDU0PlPzr"
-                            target="_blank"> <i id=activeLink class="fa">&#xf167;</i> </a>
-                  </div>
-                  </div>
-                  <div id="paperAuthors">     A. Chenreddy, P. Pakiman, S. Nadarajah, R. Chandrasekaran, R. Abens.      </div>
-                  <div id="publisher">        Proceedings of the 25th <strong> ACM SIGKDD conference on Knowledge Discovery and Data mining</strong>, Anchorage, Alaska, 2019.
-                    (accepted for oral presentation; acceptance rate 6.4%).   </div>
-                </div>
-
-
-              <div id="abstract">
-                  <div class="content">
-                    <p class="js-excerpt excerpt-hidden" style="line-height: 1.2em;text-indent: 0px; width:85%;">
-                    <b> Abstract. </b>
-                    Product brands employ shopper marketing (SM) strategies to convert
-                    shoppers along the path to purchase. Traditional marketing mix models (MMMs),
-                    which leverage regression techniques and historical data,
-                    can be used to predict the component of sales lift due to SM tactics.
-                    The resulting predictive model is a critical input to plan future SM strategies.
-                    The implementation of traditional MMMs, however, requires significant
-                    ad-hoc manual intervention due to their limited flexibility in (i)
-                    explicitly capturing the temporal link between decisions; (ii) accounting for
-                    the interaction between business rules and past (sales and decision)
-                    data during the attribution of lift to SM; and (iii) ensuring that
-                    future decisions adhere to business rules. These issues necessitate
-                    MMMs with tailored structures for specific products and retailers,
-                    each requiring significant hand-engineering to achieve satisfactory
-                    performance - a major implementation challenge.
-                    <br><br>
-                    We propose an SM Optimization and Inverse Learning Engine (SMOILE)
-                    that combines optimization and inverse reinforcement learning to
-                    streamline implementation. SMOILE learns a model of lift by viewing SM
-                    tactic choice as a sequential process, leverages inverse reinforcement learning
-                    to explicitly couple sales and decision data, and employs an optimization
-                    approach to handle a wide-array of business rules. Using a unique dataset
-                    containing sales and SM spend information across retailers and products,
-                    we illustrate how SMOILE standardizes the use of data to prescribe
-                    future SM decisions. We also track an industry benchmark to showcase the
-                    importance of encoding SM lift and decision structures to mitigate spurious
-                    results when uncovering the impact of SM decisions.
-                  </p>
-                </div> <a role="button" href="#" class="js-show-more" >Show more</a>
-                </div>
             </div>
-
-            <br></br><hr>
-
-
-        <!--  ================================
-                  Conference Papers
-              ================================      -->
-
-              <!-- <div class="container">
-                <div id="customized_title">
-                    Working Paper
-                </div><br></br>
-              </div>
-              <hr> -->
-
-          <!--  ================================
-                          Paper 4
-                ================================      -->
-
-                <div class="container">
-
-                  <div id="paperInfo">
-                      <div id="number"> <div class="container"> 4.  </div></div>
-                      <div id="paperTitle">     Menu Optimization with Decision Learning: Application to Sustainable Warehousing           </div>
-                      <div class="relatedLinks">
-                      <div id="links">
-                        <a> &nbsp; </a>
-                          <!-- <a href="https://doi.org/10.1145/3292500.3330788"
-                                target="_blank"> <i id=activeLink  class="fa">&#xf0c1;</i> </a>
-                          <a href="https://www.youtube.com/playlist?list=PL0RicIgDjGEyYSJfxuPNXoWxzDU0PlPzr"
-                                target="_blank"> <i id=activeLink class="fa">&#xf167;</i> </a> -->
-                      </div>
-                      </div>
-                      <div id="paperAuthors">     P. Pakiman, S. Nadarajah, Y. F. Lim.        </div>
-                      <div id="publisher">        In preparation for submission to <strong>Management Science</strong>.  <br></br>      </div>
-                    </div>
-
-
-                  <!-- <div id="abstract">
-                      <div class="content">
-                        <p class="js-excerpt excerpt-hidden" style="line-height: 1.2em;text-indent: 0px; width:85%;">
-                        <b> Abstract. </b>
-
-                      </p>
-                    </div> <a role="button" href="#" class="js-show-more" >Show more</a>
-                    </div> -->
-                </div>
-
-                <br></br><hr>
-
-        <!--  ================================
-                        Paper 5
-              ================================      -->
-
-              <div class="container">
-
-                <div id="paperInfo">
-                    <div id="number"> <div class="container"> 5.  </div></div>
-                    <div id="paperTitle">     Self-guided Approximate Linear Programs for Average-Cost Markov Decision Processes.           </div>
-                    <div class="relatedLinks">
-                    <div id="links">
-                      <a> &nbsp; </a>
-                        <!-- <a href="https://doi.org/10.1145/3292500.3330788"
-                              target="_blank"> <i id=activeLink  class="fa">&#xf0c1;</i> </a>
-                        <a href="https://www.youtube.com/playlist?list=PL0RicIgDjGEyYSJfxuPNXoWxzDU0PlPzr"
-                              target="_blank"> <i id=activeLink class="fa">&#xf167;</i> </a> -->
-                    </div>
-                    </div>
-                    <div id="paperAuthors">     P. Pakiman, S. Nadarajah.        </div>
-                    <div id="publisher">         In preparation for submission to <strong>INFORMS Journal on Computing.</strong>  <br></br>  </div>
-                  </div>
-
-
-                <!-- <div id="abstract">
-                    <div class="content">
-                      <p class="js-excerpt excerpt-hidden" style="line-height: 1.2em;text-indent: 0px; width:85%;">
-                      <b> Abstract. </b>
-
-                    </p>
-                  </div> <a role="button" href="#" class="js-show-more" >Show more</a>
-                  </div> -->
-              </div>
-
-              <br></br><hr>
-
-
-      <!--  ================================
-                      Paper 6
-            ================================      -->
-
-            <div class="container">
-
-              <div id="paperInfo">
-                  <div id="number"> <div class="container"> 6.  </div></div>
-                  <div id="paperTitle">     Self-guided Least Squares Monte Carlo for Financial and Real Options.   </div>
-                  <div class="relatedLinks">
-                  <div id="links">
-                    <a> &nbsp; </a>
-                      <!-- <a href="https://doi.org/10.1145/3292500.3330788"
-                            target="_blank"> <i id=activeLink  class="fa">&#xf0c1;</i> </a>
-                      <a href="https://www.youtube.com/playlist?list=PL0RicIgDjGEyYSJfxuPNXoWxzDU0PlPzr"
-                            target="_blank"> <i id=activeLink class="fa">&#xf167;</i> </a> -->
-                  </div>
-                  </div>
-                  <div id="paperAuthors">     S. Nadarajah and P. Pakiman.        </div>
-                  <div id="publisher">        Working in progress.    <br></br> </div>
-                </div>
-
-
-              <!-- <div id="abstract">
-                  <div class="content">
-                    <p class="js-excerpt excerpt-hidden" style="line-height: 1.2em;text-indent: 0px; width:85%;">
-                    <b> Abstract. </b>
-
-                  </p>
-                </div> <a role="button" href="#" class="js-show-more" >Show more</a>
-                </div> -->
-            </div>
-
-           <br></br><hr>
-
-
-
-        <!--  ================================
-                        Paper 7
-              ================================      -->
-
-              <div class="container">
-
-                <div id="paperInfo">
-                    <div id="number"> <div class="container"> 7.  </div></div>
-                    <div id="paperTitle">     A Simulation-based Reinforcement Learning Approach to Workflow Scheduling.   </div>
-                    <div class="relatedLinks">
-                    <div id="links">
-                      <a> &nbsp; </a>
-                        <!-- <a href="https://doi.org/10.1145/3292500.3330788"
-                              target="_blank"> <i id=activeLink  class="fa">&#xf0c1;</i> </a>
-                        <a href="https://www.youtube.com/playlist?list=PL0RicIgDjGEyYSJfxuPNXoWxzDU0PlPzr"
-                              target="_blank"> <i id=activeLink class="fa">&#xf167;</i> </a> -->
-                    </div>
-                    </div>
-                    <div id="paperAuthors">     P. Pakiman, C. Landau, B.Haidar, S. Nadarajah.        </div>
-                    <div id="publisher">        Working in progress.  <br></br> </div>
-                  </div>
-
-
-                <!-- <div id="abstract">
-                    <div class="content">
-                      <p class="js-excerpt excerpt-hidden" style="line-height: 1.2em;text-indent: 0px; width:85%;">
-                      <b> Abstract. </b>
-
-                    </p>
-                  </div> <a role="button" href="#" class="js-show-more" >Show more</a>
-                  </div> -->
-              </div>
-
-              <br></br><hr>
-
-
         </div>
+      </div>
 
 
-        <br></br><br></br>
+      <div class="container">
+        <div id="customized_title">    In-preparation Journal Papers <hr> </div>
+      </div>
+
+
+      <div class="container">
+        <div id="paperInfo">
+            <div id="number"> <div class="container"> 2.  </div></div>
+            <div id="paperTitle">
+                <span class="title-paper-text-format">
+                    Dynamic Matching with Learning.
+                </span>
+                <span class="author-text-format">
+                D. Adelman, A. J. Mersereau, P. Pakiman.
+                </span>
+                 In preparation for submission to
+                <span class="journal-text-format">
+                    Operations Research.
+                </span>
+                <br></br>
+            </div>
+            <div class="relatedLinks">
+            <div id="links">
+                 <i id=inactiveLink class="fa">&#xf0c1;</i>
+                 <i id=inactiveLink class="fa">&#xf1c9;</i>
+            </div>
+            </div>
+        </div>
+      </div>
+
+
+      <div class="container">
+        <div id="paperInfo">
+            <div id="number"> <div class="container"> 3.  </div></div>
+            <div id="paperTitle">
+                <span class="title-paper-text-format">
+                    Randomized Multi-Shot Approximation of Average Cost Markov Decision Processes.
+                </span>
+                <span class="author-text-format">
+                P. Pakiman, S. Nadarajah.
+                </span>
+                In preparation for submission to
+                <span class="journal-text-format">
+                    Operations Research.
+                </span>
+                <br></br>
+            </div>
+            <div class="relatedLinks">
+            <div id="links">
+                 <i id=inactiveLink class="fa">&#xf0c1;</i>
+                 <i id=inactiveLink class="fa">&#xf1c9;</i>
+            </div>
+            </div>
+        </div>
+      </div>
+
+
+      <div class="container">
+        <div id="paperInfo">
+            <div id="number"> <div class="container"> 4.  </div></div>
+            <div id="paperTitle">
+                <span class="title-paper-text-format">
+                    Self-adapting Risk Management in Dynamic Pricing with Demand Learning.
+                </span>
+                <span class="author-text-format">
+                P. Pakiman, B. Chen, S. Nadarajah, S. Jasin.
+                </span>
+                In preparation for submission to
+                <span class="journal-text-format">
+                    Manufacturing & Service Operations Management.
+                </span>
+                <br></br>
+            </div>
+            <div class="relatedLinks">
+            <div id="links">
+              <a href="http://arxiv.org/abs/2011.10690"
+                    target="_blank"> <i id=activeLink  class="fa">&#xf0c1;</i> </a>
+                 <i id=inactiveLink class="fa">&#xf1c9;</i>
+            </div>
+            </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="container">
+        <div id="customized_title">     Working Journal Papers <hr> </div>
+      </div>
+
+
+      <div class="container">
+        <div id="paperInfo">
+            <div id="number"> <div class="container"> 5.  </div></div>
+            <div id="paperTitle">
+                <span class="title-paper-text-format">
+                    Equitable and Data-driven Dynamic Matching.
+                </span>
+                <span class="author-text-format">
+                    D. Adelman, C. Keceli, P. Pakiman.
+                </span>
+                Work in progress.
+                <!-- <span class="journal-text-format">
+
+                </span> -->
+                <br></br>
+            </div>
+            <div class="relatedLinks">
+            <div id="links">
+                 <i id=inactiveLink class="fa">&#xf0c1;</i>
+                 <i id=inactiveLink class="fa">&#xf1c9;</i>
+            </div>
+            </div>
+        </div>
+      </div>
+
+
+      <div class="container">
+        <div id="paperInfo">
+            <div id="number"> <div class="container"> 6.  </div></div>
+            <div id="paperTitle">
+                <span class="title-paper-text-format">
+                    Retrospective Approximate Dynamic Programming.
+                </span>
+                <span class="author-text-format">
+                    D. Adelman, P. Pakiman.
+                </span>
+                Work in progress.
+                <!-- <span class="journal-text-format">
+
+                </span> -->
+                <br></br>
+            </div>
+            <div class="relatedLinks">
+            <div id="links">
+                 <i id=inactiveLink class="fa">&#xf0c1;</i>
+                 <i id=inactiveLink class="fa">&#xf1c9;</i>
+            </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div id="paperInfo">
+            <div id="number"> <div class="container"> 7.  </div></div>
+            <div id="paperTitle">
+                <span class="title-paper-text-format">
+                    Randomized Multi-Shot Least Squares Monte Carlo for Option Exercise.
+                </span>
+                <span class="author-text-format">
+                    P. Pakiman, S. Nadarajah.
+                </span>
+                Work in progress.
+                <!-- <span class="journal-text-format">
+
+                </span> -->
+                <br></br>
+            </div>
+            <div class="relatedLinks">
+            <div id="links">
+                 <i id=inactiveLink class="fa">&#xf0c1;</i>
+                 <i id=inactiveLink class="fa">&#xf1c9;</i>
+            </div>
+            </div>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="container">
+        <div id="customized_title">     Accepted Conference Paper <hr></div>
+      </div>
+
+
+      <div class="container">
+        <div id="paperInfo">
+            <div id="number"> <div class="container"> 8.  </div></div>
+            <div id="paperTitle">
+                <span class="title-paper-text-format">
+                    SMOILE: A Shopper Marketing Optimization and Inverse Learning Engine.
+                </span>
+                <span class="author-text-format">
+                A. Chenreddy, P. Pakiman, S. Nadarajah, R. Chandrasekaran, R. Abens.
+                </span>
+                Published in
+                <span class="journal-text-format">
+                    Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining (KDD 2019).
+                </span>
+                <br></br>
+            </div>
+            <div class="relatedLinks">
+            <div id="links">
+              <a href="https://dl.acm.org/doi/10.1145/3292500.3330788"
+                    target="_blank"> <i id=activeLink  class="fa">&#xf0c1;</i> </a>
+                 <i id=inactiveLink class="fa">&#xf1c9;</i>
+            </div>
+            </div>
+        </div>
+      </div>
+
+
     </div>
 
-
+</div>
 <script src="style/scripts.js"></script>
 </body>
 </html>
