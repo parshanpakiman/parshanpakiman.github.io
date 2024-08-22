@@ -493,15 +493,23 @@ p{
 
 .small-caps-text {
   font-variant: small-caps;
+  font-weight: italic;
 }
 .title-paper-text-format {
 font-weight: normal;
+margin-bottom: 5pt;
 }
 .journal-text-format{
 font-weight: bold;
 }
 .author-text-format {
 border-bottom: 1px solid black;
+margin-left: 25px;
+}
+.status-text-format {
+margin-left: 25px;
+margin-top: 5pt;
+margin-bottom: 10pt;
 }
 
 
