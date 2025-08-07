@@ -1,57 +1,194 @@
 <!DOCTYPE HTML>
-<html>
-
+<html lang="en">
 <head>
-  <title>Research</title>
-  <meta name="description" content="website description" />
-  <meta name="keywords" content="website keywords, website keywords" />
-  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <meta charset="UTF-8" />
+  <title>Teaching</title>
+  <meta name="description" content="Teaching — courses and materials" />
+  <meta name="keywords" content="Parshan Pakiman, Teaching, Courses" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Your site styles -->
   <link rel="stylesheet" type="text/css" href="style/style.css" />
 
-  <link rel="stylesheet" type="text/css" href="style/style.css" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Font Awesome 7 (only) -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.2.0/css/all.min.css"
+    integrity="sha512-4+e46FAKSnD06+Z6nR5jDGVoGcB4fm9p+gUxwX5Z3+0Y0jSg83I9akr9KxPCqQG3K7b4YGJMOJQw4/SuJX0K2w=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
 
 
+</head>
 
-<!--
-      BODY OF Teaching
- -->
 <body>
   <div id="main">
 
-    <!--  ================================
-              Header of the page
-          ================================      -->
+    <!-- Header -->
     <div id="header">
-       <div id="logo">
-        </div>
-      </div>
-      <div id="menubar">
-        <div id="firstLastName">
+      <div id="logo"></div>
+    </div>
+
+    <!-- Menubar -->
+    <div id="menubar">
+      <div id="firstLastName">
         <ul id="menu">
-          <li>                    <a href="vita.html">      Vita       </a></li>
-          <li>                    <a href="Presentation.html">  Presentation     </a></li>
-          <li class="selected">   <a href="teaching.html">  Teaching   </a></li>
-          <li>                    <a href="research.html">  Research   </a></li>
-          <li>                    <a href="index.html">     Home       </a></li>
+          <li><a href="vita.html">Vita</a></li>
+          <!-- <li><a href="Presentation.html">Presentation</a></li> -->
+          <li class="selected"><a href="teaching.html">Teaching</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="index.html">Home</a></li>
         </ul>
       </div>
     </div>
 
-  <div id="site_content">
+    <!-- Content -->
+    <div id="site_content">
 
-    <div class="container">
-      <p style="line-height: 1.5em;margin-left: 0px; font-size: 14pt; ext-indent: 0px; height: 500px;">
-          All my teaching materials are available on my
-          <a href="https://github.com/parshanpakiman/Teaching" target="_blank">Teaching Repository</a>.
-      </p>
-    </div>
+      <!-- Table 1: Instructor -->
+      <div class="teach-table-wrap">
+        <h3>Instructor</h3>
+        <table class="teach-table" aria-label="Instructor Courses">
+          <thead>
+            <tr>
+              <th scope="col">Course</th>
+              <th scope="col">Institution</th>
+              <th scope="col">Term(s)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><b>Supply Chain Analytics</b></td>
+              <td>University at Buffalo</td>
+              <td>Fall 2025</td>
+            </tr>
+            <tr>
+              <td><b>Production &amp; Operations Management</b></td>
+              <td>University at Buffalo</td>
+              <td>Fall 2025</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
+      <!-- Toggle to reveal the second table -->
+      <details class="showmore">
+        <summary>
+          <span class="icons">
+            <i class="fa-solid fa-chevron-down icon-more"></i>
+            <i class="fa-solid fa-chevron-up icon-less"></i>
+          </span>
+          <span class="label">
+            <span class="txt-more">Show more</span>
+            <span class="txt-less">Show less</span>
+          </span>
+        </summary>
 
+        <div class="more">
+          <!-- Table 2: Guest Instructor + Teaching Assistant -->
+          <div class="teach-table-wrap">
+            <!-- <h3>Guest Instructor &amp; Teaching Assistant</h3> -->
+            <table class="teach-table" aria-label="Guest Instructor and Teaching Assistant Roles">
+              <thead>
+                <tr>
+                  <th scope="col">Role</th>
+                  <th scope="col">Course</th>
+                  <th scope="col">Institution</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Guest Instructor -->
+                <tr>
+                  <td><span class="badge">Guest Instructor</span></td>
+                  <td><b>Supply Chain Management</b></td>
+                  <td>University of Illinois Chicago</td>
+                </tr>
+                <tr>
+                  <td><span class="badge">Guest Instructor</span></td>
+                  <td><b>Business Data Mining</b></td>
+                  <td>University of Illinois Chicago</td>
+                </tr>
+                <tr>
+                  <td><span class="badge">Guest Instructor</span></td>
+                  <td><b>Business Analytics</b></td>
+                  <td>University of Illinois Chicago</td>
+                </tr>
+                
+                <!-- spacer before Teaching Assistant -->
+                <tr class="section-spacer" aria-hidden="true" role="presentation">
+                  <td colspan="4"></td>
+                </tr>
+                <!-- Teaching Assistant -->
+                <tr>
+                  <td><span class="badge">Teaching Assistant</span></td>
+                  <td><b>Approximate Dynamic Programming</b></td>
+                  <td>University of Chicago</td>
+                  
+                </tr>
+                <tr>
+                  <td><span class="badge">Teaching Assistant</span></td>
+                  <td><b>Introduction to Operations Management</b></td>
+                  <td>University of Illinois Chicago</td>
+                  
+                </tr>
+                <tr>
+                  <td><span class="badge">Teaching Assistant</span></td>
+                  <td><b>Business Analytics</b></td>
+                  <td>University of Illinois Chicago</td>
+                  
+                </tr>
+                <tr>
+                  <td><span class="badge">Teaching Assistant</span></td>
+                  <td><b>Business Data Mining</b></td>
+                  <td>University of Illinois Chicago</td>
+                  
+                </tr>
+                <tr>
+                  <td><span class="badge">Teaching Assistant</span></td>
+                  <td><b>Online Customer Analytics</b></td>
+                  <td>University of Illinois Chicago</td>
+                  
+                </tr>
+                <tr>
+                  <td><span class="badge">Teaching Assistant</span></td>
+                  <td><b>Text Analytics for Business</b></td>
+                  <td>University of Illinois Chicago</td>
+                  
+                </tr>
+                <tr>
+                  <td><span class="badge">Teaching Assistant</span></td>
+                  <td><b>Business Forecasting</b></td>
+                  <td>University of Illinois Chicago</td>
+                  
+                </tr>
+                <tr>
+                  <td><span class="badge">Teaching Assistant</span></td>
+                  <td><b>Optimization for Analytics</b></td>
+                  <td>University of Illinois Chicago</td>
+                  
+                </tr>
+                <tr>
+                  <td><span class="badge">Teaching Assistant</span></td>
+                  <td><b>Scientific Computing</b></td>
+                  <td>University of Tehran</td>
+                  
+                </tr>
+                <tr>
+                  <td><span class="badge">Teaching Assistant</span></td>
+                  <td><b>Numerical Linear Algebra</b></td>
+                  <td>University of Tehran</td>
+                  
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </details>
 
-  </div>
-</div>
+    </div> <!-- /#site_content -->
+  </div>   <!-- /#main -->
 
-<script src="style/scripts.js"></script>
+  <script src="style/scripts.js"></script>
 </body>
 </html>
